@@ -3,6 +3,7 @@
 <head>
     <title>Oluwatomiloba's CV</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <div class="container">
@@ -69,7 +70,28 @@
                     <li>Member, Internet Society (ISOC)</li>
                     <li>Member, Cisco Network Academy</li>
                 </ul>
+
+            <form class="my-form">
+                <h3>Contact Me</h3>
+                <div class="form-group">
+                    <label>Name: </label>
+                    <input type="text" name="name" minlength="4" required>
+                </div>
+                <div class="form-group">
+                    <label>Email: </label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                        <label>Title: </label>
+                        <input type="text" name="email" required>
+                    </div>
+                <div class="form-group">
+                    <label>Message: </label>
+                    <textarea name="message" minlength="20" required></textarea>
+                </div>
+                <input class="button" type="submit" value="Submit" name="button" onclick="return confirm('Are you sure?')">
+            </form>
         </aside>
-    </div>       
+    </div>
 </body>
 </html>
